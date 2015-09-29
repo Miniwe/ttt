@@ -1,0 +1,25 @@
+{
+  "name": "ttt",
+  "version": "0.0.0",
+  "authors": [
+    "Vitaly Dryukov <miniwe@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

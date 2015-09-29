@@ -1,0 +1,22 @@
+{{#extend "layout"}}
+
+  {{#append "head"}}
+    <link rel="stylesheet" href="css/style.css" />
+  {{/append}}
+
+  {{#replace "body"}}
+    <h1>Index file from handlebars file READY 333</h1>
+    <h2>Welcome Home</h2>
+
+    <ul>
+      {{#items}}
+      <li>{{.}}</li>
+      {{/items}}
+    </ul>
+  {{/replace}}
+
+  {{#prepend "footer"}}
+    <script src="js/script.min.js"></script>
+  {{/prepend}}
+
+{{/extend}}

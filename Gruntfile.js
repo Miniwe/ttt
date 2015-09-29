@@ -55,6 +55,32 @@ grunt.initConfig({
             }]
         }
     },
+    copy: {
+      bootstrapFonts: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/bootstrap/dist",
+            src: [
+              "fonts/**"
+            ],
+            dest: "public"
+          }
+        ]
+      },
+      bootstrapJS: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/bootstrap/dist/js",
+            src: [
+              "bootstrap.min.js"
+            ],
+            "dest": "public/js/"
+          }
+        ]
+      }
+    },
     handlebarslayouts: {
         home: {
             files: {
@@ -70,7 +96,7 @@ grunt.initConfig({
                 ],
                 basePath: 'views/',
                 context: {
-                    title: 'TTT',
+                    title: 'Биржа лидов',
                     items: [
                     'apple',
                     'orange',
@@ -89,18 +115,21 @@ grunt.initConfig({
             },
         },
         scripts: {
-            files: ['assets/js/**/*.coffee'],
+            files: ['assets/js/**/*.js'],
             tasks: ['jshint', 'concat', 'uglify'],
             options: {
                 spawn: false,
             },
         },
         css: {
-            files: ['assets/less/**/*.scss'],
+            files: ['assets/less/**/*.less'],
             tasks: ['less'],
             options: {
                 spawn: false,
             },
+        },
+        options: {
+          livereload: true
         }
     }
 });
@@ -113,6 +142,7 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks("grunt-handlebars-layouts");
 grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks('grunt-contrib-copy');
 // grunt.loadNpmTasks('grunt-notify');
 
 // grunt.loadNpmTasks('grunt-contrib-coffee');
@@ -122,6 +152,6 @@ grunt.loadNpmTasks('grunt-contrib-imagemin');
 // grunt.registerTask('short', ['coffee', 'concat', 'uglify', 'compass']);
 
 grunt.registerTask('handlebars', ['handlebarslayouts']);
-grunt.registerTask('default', ['handlebars', 'imagemin', 'concat','jshint','less','uglify']);
+grunt.registerTask('default', ['handlebars', 'imagemin', 'concat', 'copy','jshint','less','uglify']);
 
 };
