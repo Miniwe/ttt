@@ -88,7 +88,7 @@ grunt.initConfig({
             },
             options: {
                 partials: [
-                'views/partials/*.hbs',
+                'views/partials/**/*.hbs',
                 'views/layout/layout.html'
                 ],
                 modules: [
@@ -97,6 +97,7 @@ grunt.initConfig({
                 basePath: 'views/',
                 context: {
                     title: 'Биржа лидов',
+                    phone: '+ 7 (499) 704 42 95',
                     items: [
                     'apple',
                     'orange',
@@ -108,7 +109,7 @@ grunt.initConfig({
     },
     watch: {
         templates: {
-            files: ['views/**/*.hbt', 'views/**/*.html'],
+            files: ['views/**/*.hbs', 'views/**/*.html'],
             tasks: ['handlebars'],
             options: {
                 spawn: false,
@@ -117,6 +118,13 @@ grunt.initConfig({
         scripts: {
             files: ['assets/js/**/*.js'],
             tasks: ['jshint', 'concat', 'uglify'],
+            options: {
+                spawn: false,
+            },
+        },
+        images: {
+            files: ['assets/img/**/*'],
+            tasks: ['imagemin'],
             options: {
                 spawn: false,
             },

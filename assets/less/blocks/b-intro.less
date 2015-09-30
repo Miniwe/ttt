@@ -1,0 +1,57 @@
+.b-intro {
+  .box-shadow(@shadow-down);
+  position: relative;
+  &.container-fluid {
+    background: url('/img/headfonsize.jpg') no-repeat center 0;
+  }
+  .panel-ttt {
+    background: transparent;
+  }
+  .b-img-menu {
+    display: table;
+    .item {
+      display: table-cell;
+      width: 12%;
+      padding: 0 10px;
+      vertical-align: bottom;
+      .opacity(.4);
+      .transition(opacity .4s ease);
+      &:hover {
+        .opacity(1);
+      }
+      a {
+        display: block;
+        color: @c-dark-shadow;
+        text-decoration: none;
+      }
+      .caption {
+        font-family: @font-family-sans-serif-alt;
+        font-size: @font-size-small - 4px;
+        margin-top: @font-size-small - 4px;
+        text-transform: uppercase;
+        min-height: 36px;
+      }
+      &.item_large {
+        width: 28%;
+        .opacity(0);
+        text-align: center;
+        img {
+          position: relative;
+          top: 38px;
+          left: 3px;
+        }
+        &:hover {
+          .opacity(1);
+        }
+      }
+    }
+  }
+  .btn-cont {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .btn {
+      font-family: @font-family-sans-serif-alt;
+      text-transform: uppercase;
+    }
+  }
+}

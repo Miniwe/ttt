@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/style.css" />
   
 
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -32,7 +31,407 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="/webmaster.html"><span>Вебмастер</span></a></li>
+        <li><a href="/advertiser.html"><span>Рекламодатель</span></a></li>
+        <li><a class="btn btn-warning" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a></li>
+        <li><p class="navbar-text">+ 7 (499) 704 42 95</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="btn btn-default" href="#sign-in" data-toggle="modal" data-target="#auth">Войти</a></li>
+        <li><a href="#offers"><span>Офферы</span> <span id="offers-count">(128)</span></a></li>
+        <li><a href="#specials"><span>Акции</span></a></li>
+        <li><a href="#feedback"><span>Сделать заказ</span></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-lower" role="navigation">
+  <div class="container">
+    <div id="navbar-lower" class="collapse navbar-collapse">
+    <div class="nav navbar-nav navbar-left">
+      <script type="text/javascript">(function() {
+        if (window.pluso)if (typeof window.pluso.start == "function") return;
+        if (window.ifpluso==undefined) { window.ifpluso = 1;
+          var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+          s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+          s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+          var h=d[g]('body')[0];
+          h.appendChild(s);
+        }})();</script>
+      <div class="pluso" data-background="#ebebeb" data-options="medium,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+
+    </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">+ 7 (499) 704 42 95</a></li>
+        <li><a class="btn btn-danger" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a></li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="filler"></div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="callOrder" tabindex="-1" role="dialog" aria-labelledby="callOrderLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="callOrderLabel">Заказать звонок</h4>
+      </div>
+      <div class="modal-body">
+      <form>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="Имя *">
+        </div>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputPthone1" placeholder="Телефон *">
+        </div>
+
+        <button type="button" class="btn btn-block btn-lg btn-primary">Позвоните мне</button>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="learnMore" tabindex="-1" role="dialog" aria-labelledby="learnMoreLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="learnMoreLabel">Узнать подробности</h4>
+      </div>
+      <div class="modal-body">
+      <form>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="Имя *">
+        </div>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputPthone1" placeholder="Телефон *">
+        </div>
+
+        <button type="button" class="btn btn-block btn-danger">Отправить</button>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="auth" tabindex="-1" role="dialog" aria-labelledby="authLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="authLabel">Войти в личный кабинет</h4>
+      </div>
+      <div class="modal-body">
+      <form>
+          <div class="form-group">
+            
+            <input type="text" class="form-control" id="exampleInputName1" placeholder="Имя *">
+          </div>
+          <div class="form-group">
+            
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail *">
+          </div>
+
+          <button type="button" class="btn btn-block btn-lg btn-primary">Войти</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 
+  <h1>Биржа лидов</h1>
+   -->
+
+  
+
+    <div id="intro" class="container-fluid b-intro">
+  <div class="container">
+  <div class="panel panel-ttt">
+    <div class="panel-heading text-center">
+      <h1>
+        <img src="img/logo-new.png" alt="Биржа лидов" width="400">
+      </h1>
+      <h3>
+
+      <div id="carousel-intro" class="carousel carousel-fade carousel-intro slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"><div class="carousel-caption">
+          <h1>ПОКУПАЕМ И ПРОДАЕМ ВАШИХ КЛИЕНТОВ</h1>
+          </div></div>
+          <div class="item"><div class="carousel-caption">
+          <h1>БОЛЕЕ <span class="accent">128</span> ОФФЕРОВ И <span class="accent">32</span> ЭКСКЛЮЗИВНЫХ</h1>
+          </div></div>
+          <div class="item"><div class="carousel-caption">
+          <h1>ВЫГОДНАЯ ПАРТНЕРСКАЯ ПРОГРАММА</h1>
+          </div></div>
+          <div class="item"><div class="carousel-caption">
+          <h1>РЕГУЛЯРНЫЕ БОНУСЫ</h1>
+          </div></div>
+          <div class="item"><div class="carousel-caption">
+          <h1><span class="accent">30</span> ИНСТРУМЕНТОВ, <span class="accent">16</span> ТИПОВ СТАТИСТИКИ ПО РАЗНЫМ ПОКАЗАТЕЛЯМ</h1>
+          </div></div>
+          <div class="item"><div class="carousel-caption">
+          <h1>ВОЗМОЖНОСТЬ <span class="accent">ИНДИВИДУАЛЬНЫХ</span> УСЛОВИЙ РАБОТЫ</h1>
+          </div></div>
+       </div>
+      </div>
+
+      </h3>
+    </div>
+    <div class="panel-body">
+
+      <div class="b-img-menu">
+        <div class="item">
+          <a href="#gain"><img src="img/money.png" alt="">
+            <div class="caption">Как заработать деньги</div></a>
+        </div>
+        <div class="item">
+          <a href="#offers"><img src="img/book.png" alt="">
+            <div class="caption">Наши предложения</div></a>
+        </div>
+        <div class="item">
+          <a href="#hand"><img src="img/hand.png" alt="">
+            <div class="caption">Партнерская программа</div></a>
+        </div>
+        <div class="item item_large">
+          <a href="#v"><img src="img/rocket.png" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#specials"><img src="img/sell.png" alt="">
+            <div class="caption">Специальные акции</div></a>
+        </div>
+        <div class="item">
+          <a href="#bigflow"><img src="img/full.png" alt="">
+            <div class="caption">Что вы получаете</div></a>
+        </div>
+        <div class="item">
+          <a href="#feedback"><img src="img/phone.png" alt="">
+            <div class="caption">Обратная связь</div></a>
+        </div>
+      </div>
+      <div class="btn-cont text-center">
+        <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#learnMore">Купить клиентов</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+    <div id="gain" class="container-fluid b-gain">
+  <div class="container">
+  <div class="panel panel-ttt">
+      <div class="panel-heading">
+        <h1>Зарабатывать деньги очень просто</h1>
+        <h3>Покупка лидов - <span class="accent">самый быстрый</span> способ увеличить прибыль </h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="b-feature">
+              <div class="icon icon_yellow">
+                <i class="fa fa-usd"></i>
+              </div>
+              <div class="caption">
+                Оплата только за действия клиентов, которые <span class="accent">приносят вам прибыль</span>
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_cyan">
+                <i class="fa fa-shopping-cart"></i>
+              </div>
+              <div class="caption">
+                Выбор целевого действия и способа его оплаты
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_orange">
+                <i class="fa fa-bar-chart"></i>
+              </div>
+              <div class="caption">
+                Прозрачная, <span class="accent">детальная статистика</span> в реальном времени
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="b-feature">
+              <div class="icon icon_cyan">
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="caption">
+                Выплаты куда угодна, когда угодно - даже по выходным и праздникам
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_orange">
+                <i class="fa fa-book"></i>
+              </div>
+              <div class="caption">
+                <span class="accent">Выбор</span> среди всех существующих видов <span class="accent">трафика</span>
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_yellow">
+                <i class="fa fa-calendar-check-o"></i>
+              </div>
+              <div class="caption">
+                Гибкость в работе - мы подстроимся под ваш график
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="offers" class="container-fluid b-offers">
+  <div class="container">
+
+    <div class="panel panel-ttt">
+      <div class="panel-heading">
+        <h1>НАШИ ПРЕДЛОЖЕНИЯ</h1>
+      </div>
+      <div class="panel-body">
+        Offsers content
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius laboriosam nisi fuga in aliquam facere ea, quibusdam ullam nostrum assumenda aliquid incidunt quaerat ab, suscipit, inventore possimus veniam eaque doloremque nesciunt quae. Similique provident voluptas natus ipsam, molestiae voluptatum eligendi temporibus incidunt, iusto voluptate dicta dolores laudantium! Ipsum, harum reprehenderit neque, iusto hic illo quae, voluptas cum dolorem, quod eligendi. Quia quae iusto quidem consequuntur magni sit error quisquam cumque nihil repudiandae! Explicabo repellat veritatis at optio, architecto animi aspernatur expedita quisquam id voluptas ratione quas commodi dolore sunt unde, praesentium soluta ab, consequatur officiis blanditiis repellendus fugiat modi.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptates!</div>
+        <div>Labore at consectetur rem inventore, dolorum architecto, rerum cupiditate quod enim est? Earum, quas necessitatibus accusantium aperiam, ipsam expedita ad incidunt harum deserunt culpa! Aut enim, repellendus soluta minima nisi deserunt, error ullam iusto, saepe assumenda totam reprehenderit. Architecto maxime molestiae ex eum laboriosam repellat cumque repellendus amet deserunt quod iusto natus neque a modi minima ut consequatur magnam ea maiores ducimus incidunt vero nostrum, praesentium. Odio officia, laudantium voluptate ab ad, nobis nostrum reprehenderit fuga iure quam saepe repellat eius ut iusto temporibus aliquam possimus, nam minima accusantium officiis necessitatibus? Unde quia nisi maiores aperiam beatae? Nihil, esse voluptate.<br><br>Dignissimos temporibus dolorem quisquam minima accusamus provident quis quo nulla?</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="specials" class="panel panel-ttt" style="background-color: #F5F9FD">
+  <div class="panel-heading">
+    <h1>СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h1>
+  </div>
+  <div class="panel-body">
+    Specials content
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, accusamus deleniti animi atque pariatur voluptas! Distinctio recusandae maxime alias voluptate? Velit eum eaque harum iusto quasi, at, sint magni quia illo ab minima exercitationem, totam, similique hic esse itaque amet eius error atque culpa. Eius culpa illo quisquam at dolore quia recusandae ex corrupti reiciendis minima, eum nisi illum est similique numquam, tenetur quod! Veniam laudantium et doloribus minus aliquam dolor rerum a unde quo, possimus fugit quod cumque temporibus tempore repudiandae maiores voluptatibus. Laboriosam vitae debitis totam neque dolore nam a ipsam sint fuga dignissimos, dolorem adipisci laudantium quae.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ipsam.</div>
+    <div>Aperiam in tempore amet minus, dicta molestiae quod officia repellat distinctio cupiditate quis, est cumque atque iste quibusdam omnis impedit officiis, id ab rerum molestias deleniti asperiores nulla. Veritatis sint distinctio, repellendus saepe ipsam! Dolor nostrum quod adipisci ex reiciendis architecto, at et, consectetur, rerum aliquam ipsum inventore earum aut corporis, error quam doloribus rem placeat. Quae laudantium ipsa eaque laboriosam, non quibusdam placeat nam possimus earum quia aliquid recusandae harum excepturi incidunt sint dolorem facilis beatae, sit provident, atque similique officia a distinctio. Nesciunt fuga adipisci eos! Necessitatibus consequuntur quis vel velit, quasi commodi et obcaecati quod nisi at.<br><br>Error, voluptate, commodi a iure id amet? Nihil, temporibus itaque?</div>
+  </div>
+</div>
+    <div id="bigflow" class="container-fluid b-gain">
+  <div class="container">
+    <div class="panel panel-ttt">
+      <div class="panel-heading">
+        <h1>ЕСЛИ НУЖЕН БОЛЬШОЙ ПОТОК ЛИДОВ</h1>
+        <h3>ТО МЫ ПРЕДОСТАВИМ ЕГО ВАМ</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="b-feature">
+              <div class="icon icon_yellow">
+                <i class="fa fa-user-md"></i>
+              </div>
+              <div class="caption">
+                Мы анализируем целевую аудиторию
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_cyan">
+                <i class="fa fa-filter"></i>
+              </div>
+              <div class="caption">
+                Подбираем <span class="accent">лучшие</span> площадки интернет-ресурсов
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_orange">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <div class="caption">
+                Разрабатываем интересные предложения и формы их подачи
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="b-feature">
+              <div class="icon icon_cyan">
+                <i class="fa fa-folder-open-o"></i>
+              </div>
+              <div class="caption">
+                Мы создаем посадочные старницыдля <span class="accent">генерации лидов</span>
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_orange">
+                <i class="fa fa-users"></i>
+              </div>
+              <div class="caption">
+                Мы делим аудиторию на группы по темам и проблемам
+              </div>
+            </div>
+            <div class="b-feature">
+              <div class="icon icon_yellow">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="caption">
+                Оптимизируем <span class="accent">рекламные</span> интернет-<span class="accent">кампании</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="feedback" class="panel panel-ttt">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-10">
+        <h1>ОБРАТНАЯ СВЯЗЬ И КОНТАКТЫ</h1>
+        <h3>ПИШИТЕ НАМ ПО ЛЮБОМУ ВОПРОСУ, <span class="accent">МЫ ОТВЕТИМ</span> МАКСИМАЛЬНО БЫСТРО!</h3>
+
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <div class="panel-body">
+    Feedback content
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet laborum eaque, mollitia quo autem, quis aspernatur. Expedita ab similique dignissimos architecto, blanditiis id quo adipisci amet, quos illo, obcaecati voluptatum magnam deserunt non tenetur commodi. Est ex aliquid totam maiores laborum nobis eligendi maxime cumque a, vero dolore dolores dolor, nam vitae, impedit beatae aspernatur cupiditate perferendis mollitia omnis provident reprehenderit! Mollitia nam neque, omnis illum nulla vitae iusto optio sequi eum molestias nobis similique earum quae quasi nihil, obcaecati consequatur asperiores amet deserunt rerum eveniet sapiente alias iste. Minima adipisci vitae eos voluptatem assumenda repudiandae veritatis dolor aut odit, doloribus, eaque placeat aspernatur! Ullam necessitatibus blanditiis ut explicabo! Voluptates temporibus eveniet quam tempore odio laborum, eaque, minima eos ullam nostrum, officia, deleniti nemo harum cupiditate eligendi culpa esse! Consectetur possimus, hic veniam at, in accusantium architecto quibusdam temporibus cupiditate pariatur similique iusto distinctio, ipsa ex. Ducimus unde, et corrupti, ratione, eum nisi quis beatae aliquid veniam ab facere iste rerum incidunt! Totam sint nisi voluptatibus ratione modi minus impedit maxime, tempora, harum incidunt placeat. Nihil eos ipsam ipsum officia perferendis. Quod soluta fugit vitae reprehenderit dolores animi, voluptas, sequi repellendus non reiciendis optio et, autem, fugiat dolorem repellat delectus.</div><br><br>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsam sapiente repellendus ex, architecto odio quia dicta natus blanditiis earum, nisi perferendis numquam, illum facilis a asperiores veniam delectus veritatis nulla doloremque hic nihil dolores harum quos praesentium? Voluptatibus vero provident eum recusandae placeat voluptates nesciunt, consequuntur accusantium incidunt, aliquam nobis nam ad, ex soluta fuga perspiciatis quisquam sequi porro hic eveniet, ullam velit optio? Ab eligendi cumque possimus eum neque consequuntur error excepturi est veritatis, sequi iste, consectetur quisquam eaque maiores magni ratione. Assumenda dolorum unde animi quo veniam facere sint, laborum. Molestias eum dolorem a tempore et, debitis.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, magni.</div>
+    <div>Voluptatum, non obcaecati porro minus minima repudiandae quam doloremque delectus alias, doloribus corporis voluptate! Ut illum corporis eos reprehenderit non. Perspiciatis molestias excepturi, assumenda nemo facilis corrupti dolorem repudiandae minus magni cupiditate! Veritatis voluptas repellat error officia impedit aliquam totam at, consectetur architecto minima nihil commodi saepe placeat minus quisquam, exercitationem quaerat sapiente, nostrum perspiciatis aut deleniti similique! Animi, quidem laboriosam perferendis suscipit eos molestias, rem amet maiores sapiente illo! Dolorem unde incidunt, fuga labore! Voluptates, laborum, placeat mollitia expedita animi assumenda minus, adipisci veniam atque ipsum harum vel eveniet nesciunt! Consequuntur, eius? Placeat cum labore similique magnam, architecto quidem.<br><br>Laborum voluptatum ipsa incidunt reiciendis a facilis tempore assumenda cupiditate?</div>
+  </div>
+</div>
+
+  
+
+  <footer id="footer">
+<nav class="navbar navbar-inverse navbar-footer">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Биржа лидов</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -55,61 +454,6 @@
     </div><!--/.nav-collapse -->
   </div>
 </nav>
-
-  <!-- 
-  <h1>Биржа лидов</h1>
-   -->
-
-  <div class="container">
-    
-    <h1>Index file from handlebars file READY 333</h1>
-    <h2>Welcome Home</h2>
-
-    <div class="starter-template">
-      <h1>Bootstrap starter template</h1>
-      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    </div>
-
-    <ul>
-      
-      <li>apple</li>
-      
-      <li>orange</li>
-      
-      <li>banana</li>
-      
-    </ul>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  </div>
-
-  <footer>
-  <div class="container">
-    footer
-  </div>
 </footer>
 
   

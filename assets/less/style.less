@@ -1,7 +1,37 @@
+@import "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 @import "../../bower_components/bootstrap/less/bootstrap.less";
 
-@pagePaddingTop: 50px;
+@import "variables.less";
+@import "bootstrap_custom.less";
+
+@import "mixins/mixins.less";
+
+@import "layout/footer.less";
+
+@import "blocks/navbar.less";
+@import "blocks/navbar-inverse.less";
+@import "blocks/navbar-lower.less";
+@import "blocks/panel.less";
+
+@import "blocks/b-intro.less";
+@import "blocks/b-gain.less";
+@import "blocks/b-offers.less";
+
+@import "blocks/b-feature.less";
+
+@import "blocks/carousel-intro.less";
 
 body {
-  padding-top: @pagePaddingTop;
+  padding-top: @page-padding-top;
 }
+
+.accent {
+  color: @c-accent;
+}
+
+.no-bg {
+  background: transparent;
+}
+
+// 10 LESS CSS Examples You Should Steal for Your Projects: https://codemyviews.com/blog/10-less-css-examples-you-should-steal-for-your-projects
