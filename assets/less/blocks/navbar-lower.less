@@ -3,5 +3,20 @@
   margin-bottom: 0;
   .box-shadow(none);
   border: 0;
-  padding-top: @font-size-h3;
+  padding-top: @font-size-h6;
+  .navbar-text {
+    color: #4a4a4a;
+    font-size: @font-size-h5;
+  }
+  .btn {
+    .transition(background-color .4s ease);
+    &.btn-danger {
+      background-color: #d41710;
+      color: #fff;
+      &:hover {
+        background-color: lighten(#d41710, 10%);
+        color: #fff;
+      }
+    }
+  }
 }

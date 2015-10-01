@@ -1,18 +1,34 @@
 .navbar {
+  .navbar-text {
+    font-weight: bold;
+    color: #fff899;
+    font-size: 18px;
+  }
   .btn {
-    padding: 4px 17px;
+    padding: 3px 18px;
     font-family: @font-family-sans-serif-alt;
     font-size: 16px;
     text-transform: uppercase;
     margin: 7px;
+    .transition(background-color .4s ease);
+    &.btn-default{
+      background-color: transparent;
+      color: #fff;
+      .box-shadow(inset 0 0 0px 1px #fff);
+      // margin: -2px;
+      &:hover {
+        background-color: #f54a47;
+      }
+    }
     &.btn-warning{
       background-color: #fff899;
       color: @c-dark-shadow;
       border: #fff899;
       &:hover {
-        background-color: luma(#fff899, 10%);
-        border: luma(#fff899, 10%);
-    }
+        background-color: lighten(#fff899, 10%);
+        border: lighten(#fff899, 10%);
+        color: @c-dark-shadow;
+      }
     }
   }
 }

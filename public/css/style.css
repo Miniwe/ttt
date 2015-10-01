@@ -3391,26 +3391,26 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #e62620;
+  border-color: #d51e18;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #761c19;
+  background-color: #be1a15;
+  border-color: #620e0b;
 }
 .btn-danger:hover {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #be1a15;
+  border-color: #9e1612;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #be1a15;
+  border-color: #9e1612;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -3422,8 +3422,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active.focus,
 .open > .dropdown-toggle.btn-danger.focus {
   color: #ffffff;
-  background-color: #ac2925;
-  border-color: #761c19;
+  background-color: #9e1612;
+  border-color: #620e0b;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3448,11 +3448,11 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #e62620;
+  border-color: #d51e18;
 }
 .btn-danger .badge {
-  color: #d9534f;
+  color: #e62620;
   background-color: #ffffff;
 }
 .btn-link {
@@ -4956,11 +4956,11 @@ a.label:focus {
   background-color: #ec971f;
 }
 .label-danger {
-  background-color: #d9534f;
+  background-color: #e62620;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #c9302c;
+  background-color: #be1a15;
 }
 .badge {
   display: inline-block;
@@ -5237,7 +5237,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-danger {
-  background-color: #d9534f;
+  background-color: #e62620;
 }
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -6901,12 +6901,61 @@ button.close {
   box-shadow: 0px 0px 10px #a1a1a1;
   padding: 14px;
 }
+.modal-dialog .modal-content {
+  background-color: #c7d6de;
+  padding: 52px;
+  border-radius: 17px;
+}
+.modal-dialog .modal-header {
+  border-bottom: none;
+  font-size: 34px;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2c2c2c;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-dialog .modal-header .close {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 30px;
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+input,
+textarea,
+select {
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 17px;
+}
+.navbar .navbar-text {
+  font-weight: bold;
+  color: #fff899;
+  font-size: 18px;
+}
 .navbar .btn {
-  padding: 4px 17px;
+  padding: 3px 18px;
   font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin: 7px;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+}
+.navbar .btn.btn-default {
+  background-color: transparent;
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 0px 1px #ffffff;
+  -moz-box-shadow: inset 0 0 0px 1px #ffffff;
+  box-shadow: inset 0 0 0px 1px #ffffff;
+}
+.navbar .btn.btn-default:hover {
+  background-color: #f54a47;
 }
 .navbar .btn.btn-warning {
   background-color: #fff899;
@@ -6914,8 +6963,9 @@ button.close {
   border: #fff899;
 }
 .navbar .btn.btn-warning:hover {
-  background-color: 90.69471104%;
-  border: 90.69471104%;
+  background-color: #fffbcc;
+  border: #fffbcc;
+  color: #4a4a4a;
 }
 .navbar-inverse a > span {
   border-bottom: 0px solid transparent;
@@ -6935,7 +6985,26 @@ button.close {
   -moz-box-shadow: none;
   box-shadow: none;
   border: 0;
-  padding-top: 34px;
+  padding-top: 17px;
+}
+.navbar-lower .navbar-text {
+  color: #4a4a4a;
+  font-size: 20px;
+}
+.navbar-lower .btn {
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+}
+.navbar-lower .btn.btn-danger {
+  background-color: #d41710;
+  color: #fff;
+}
+.navbar-lower .btn.btn-danger:hover {
+  background-color: #ef2f28;
+  color: #fff;
 }
 .b-intro {
   -webkit-box-shadow: 0px 10px 30px -10px #000000;
