@@ -5,14 +5,17 @@
   {{/append}}
 
   {{#replace "body"}}
-    <h1>Index file from handlebars file READY 333</h1>
-    <h2>Welcome Home</h2>
+  <div class="container">
 
-    <ul>
-      {{#items}}
-      <li>{{.}}</li>
-      {{/items}}
-    </ul>
+      <h1>Index file from handlebars file READY 333</h1>
+      <h2>Welcome Home</h2>
+
+      <ul>
+        {{#items}}
+        <li>{{.}}</li>
+        {{/items}}
+      </ul>
+  </div>
   {{/replace}}
 
   {{#prepend "footer"}}
