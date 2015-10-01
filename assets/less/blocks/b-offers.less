@@ -1,4 +1,5 @@
 .b-offers {
+  padding: 60px 0;
   &.container-fluid {
     position: relative;
     .box-shadow(@shadow-top);
@@ -7,5 +8,48 @@
   .panel-ttt {
     // padding: 30px 90px;
     background-color: transparent;
+  }
+  .panel-heading {
+    background-color: transparent;
+    padding: 0;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .panel-body {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      padding-left: 24px;
+    }
+    table {
+      border: 1px solid #ddd;
+      margin-top: 6px;
+    }
+  }
+  ul.offer-tabs {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin-right: 6px;
+      &.active {
+        a {
+          .box-shadow(inset 0 -10px 10px -10px #000);
+        }
+      }
+      a {
+        .transition(box-shadow .4s ease);
+        padding-left: 20px;
+        padding-right: 20px;
+        .box-shadow(inset 0 0 0 0 transprent);
+      }
+    }
+  }
+  textarea {
+    height: 216px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

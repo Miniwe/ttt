@@ -12,6 +12,7 @@
   
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animate.css" />
   
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -274,7 +275,7 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-md-6">
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_yellow">
                 <i class="fa fa-usd"></i>
               </div>
@@ -282,7 +283,7 @@
                 Оплата только за действия клиентов, которые <span class="accent">приносят вам прибыль</span>
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_cyan">
                 <i class="fa fa-shopping-cart"></i>
               </div>
@@ -290,7 +291,7 @@
                 Выбор целевого действия и способа его оплаты
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_orange">
                 <i class="fa fa-bar-chart"></i>
               </div>
@@ -300,7 +301,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_cyan">
                 <i class="fa fa-star"></i>
               </div>
@@ -308,7 +309,7 @@
                 Выплаты куда угодна, когда угодно - даже по выходным и праздникам
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_orange">
                 <i class="fa fa-book"></i>
               </div>
@@ -316,7 +317,7 @@
                 <span class="accent">Выбор</span> среди всех существующих видов <span class="accent">трафика</span>
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_yellow">
                 <i class="fa fa-calendar-check-o"></i>
               </div>
@@ -344,23 +345,25 @@
               <div class="panel-body">
                 <div class="well well-offer">
                   <form>
-                    <input type="text" class="input-lg" placeholder="Поиск"/>
-                    <input type="submit" class="btn btn-primary" value="Найти">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Поиск"/>
+                    </div>
+                    <div class="text-center">
+                      <input type="submit" class="btn btn-primary btn-primary_dark" value="&nbsp; &nbsp; &nbsp; &nbsp; Найти &nbsp; &nbsp; &nbsp; &nbsp;">
+                    </div>
                   </form>
                 </div>
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="well well-offer panel panel-offset">
                       <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             ► Категории офферов
                           </a>
-                        </h4>
                       </div>
                       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
                           <ul>
-                            <li>Lorem ipsum dolor sit.</li>
+                            <li><a href="#1">Lorem ipsum dolor sit.</a></li>
                             <li>Cumque omnis facere sequi.</li>
                             <li>Magnam fugit amet explicabo!</li>
                             <li>Vero voluptas consequuntur sit!</li>
@@ -370,11 +373,9 @@
                     </div>
                     <div class="well well-offer panel panel-default">
                       <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             ► Тип Трафика
                           </a>
-                        </h4>
                       </div>
                       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
@@ -389,11 +390,9 @@
                     </div>
                     <div class="well well-offer panel panel-default">
                       <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             ► Геотаргетинг
                           </a>
-                        </h4>
                       </div>
                       <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="panel-body">
@@ -411,11 +410,11 @@
 
 
                 <div class="well well-offer well-offer">
-                  <form>
+                  <form class="text-center">
                     <h5>
                       <label>ДОБАВИТЬ СВОЙ ОФФЕР</label>
                     </h5>
-                    <input type="submit" class="btn btn-danger" value="Добавить">
+                    <input type="submit" class="btn btn-danger" value="&nbsp; &nbsp; &nbsp; Добавить &nbsp; &nbsp; &nbsp;">
                   </form>
                 </div>
               </div>
@@ -433,7 +432,7 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-8">
-          <h3>Компьютерный эксперт</h3>
+          <h4>Компьютерный эксперт</h4>
           <strong>Прочие офферы:</strong> Обучение, компьютерное обучение
         </div>
         <div class="col-md-4">
@@ -446,7 +445,7 @@
         <thead>
           <tr>
             <th></th>
-            <th>холд<span class="badge" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span>
+            <th>холд<sup class="badge" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</sup>
             </th>
             <th>тариф</th>
             <th>%подтв.</th>
@@ -465,7 +464,7 @@
         <div class="col-md-7">
           <strong>Гео:</strong> Россия, Украина, Казахстан
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 text-right">
           <strong>Рейтинг:</strong> <span class="accent">✔✔✔✔</span>✔
         </div>
       </div>
@@ -476,7 +475,7 @@
   <br>
   <div class="row">
     <div class="col-md-8">
-      <ul class="nav nav-pills" role="tablist">
+      <ul class="offer-tabs" role="tablist">
         <li role="presentation"><a class="btn btn-danger" href="#details" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
         <li role="presentation"><a class="btn btn-success" href="#landing" aria-controls="landing" role="tab" data-toggle="pill">Лендинг</a></li>
         <li role="presentation"><a class="btn btn-warning" href="#promo" aria-controls="promo" role="tab" data-toggle="pill">Промо</a></li>
@@ -607,55 +606,56 @@
 
             
             <div class="well well-offer">
-    <h3>Баннеры</h3>
+  <h3>Баннеры</h3>
 
-Выбирайте подходящий под Ваш сайт баннер. <br>
-Возможны варианты с горизонтальным и вертикальным размещением.
+  Выбирайте подходящий под Ваш сайт баннер. <br>
+  Возможны варианты с горизонтальным и вертикальным размещением.
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="http://lorempixel.com/400/200" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="http://lorempixel.com/400/200" />
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="http://lorempixel.com/400/200" />
+      </div>
+
+    </div>
+  </div>
+
+  <h3>Лид-формы</h3>
+  <div class="well">
+
     <div class="row">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://lorempixel.com/400/200" />
-          </div>
+      <div class="col-md-6">
+        <img src="img/lid-forma.jpg">
       </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://lorempixel.com/400/200" />
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="http://lorempixel.com/400/200" />
-        </div>
-
-      </div>
-    </div>
-
-    <h3>Лид-формы</h3>
-    <div class="well">
-
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/lid-forma.jpg">
-        </div>
-        <div class="col-md-6">
-          <div class="well well-offer">
+      <div class="col-md-6">
+        <div class="well well-offer">
           <form>
-              <textarea>
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
-
-  &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-
-  &lt;head&gt;
-
-  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+            <div class="form-group">
+              <textarea class="form-control" rows="8">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
               </textarea>
-              <button type="submit" class="btn btn-danger btn-lg">Получить код</button>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-danger">&nbsp;    Получить код    &nbsp;</button>
+            </div>
           </form>
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
 </div>
 
@@ -690,7 +690,7 @@
     </div>
   </div>
 </div>
-    <div id="specials" class="container-fluid b-specials" style="background-color: #F5F9FD">
+    <div id="specials" class="container-fluid b-specials">
   <div class="container">
 
     <div  class="panel panel-ttt" style="background-color: #F5F9FD">
@@ -737,7 +737,7 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-md-6">
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_yellow">
                 <i class="fa fa-user-md"></i>
               </div>
@@ -745,7 +745,7 @@
                 Мы анализируем целевую аудиторию
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_cyan">
                 <i class="fa fa-filter"></i>
               </div>
@@ -753,7 +753,7 @@
                 Подбираем <span class="accent">лучшие</span> площадки интернет-ресурсов
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_orange">
                 <i class="fa fa-clock-o"></i>
               </div>
@@ -763,7 +763,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_cyan">
                 <i class="fa fa-folder-open-o"></i>
               </div>
@@ -771,7 +771,7 @@
                 Мы создаем посадочные старницыдля <span class="accent">генерации лидов</span>
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_orange">
                 <i class="fa fa-users"></i>
               </div>
@@ -779,7 +779,7 @@
                 Мы делим аудиторию на группы по темам и проблемам
               </div>
             </div>
-            <div class="b-feature">
+            <div class="b-feature wow fadeInUp">
               <div class="icon icon_yellow">
                 <i class="fa fa-envelope-o"></i>
               </div>
@@ -799,13 +799,13 @@
 
     <div class="panel panel-ttt">
       <div class="panel-heading">
+        <h1>ОБРАТНАЯ СВЯЗЬ И КОНТАКТЫ</h1>
         <div class="row">
           <div class="col-md-8">
-            <h1>ОБРАТНАЯ СВЯЗЬ И КОНТАКТЫ</h1>
-            <h3>ПИШИТЕ НАМ ПО ЛЮБОМУ ВОПРОСУ, <span class="accent">МЫ ОТВЕТИМ</span> МАКСИМАЛЬНО БЫСТРО!</h3>
+            <h4 class="text-center">Пишите нам по любому вопросу, <span class="accent">мы ответим</span> максимально быстро!</h4>
           </div>
           <div class="col-md-4">
-            Подпишись на нас:
+            <h4 class="text-center">Подпишись на нас:</h4>
           </div>
         </div>
       </div>
@@ -813,28 +813,41 @@
 
         <div class="row">
           <div class="col-md-8">
-                <form>
-            <div class="panel panel-offer panel-offer_dark">
-              <div class="panel-body">
+            <form>
+              <div class="panel panel-offer panel-offer_dark">
+                <div class="panel-body">
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" />
-                      <input type="text" />
-                      <input type="text" />
-                      <input type="text" />
+                      <div class="form-group">
+                        <input type="text" required="true" class="form-control" id="exampleInputName1" placeholder="Имя *">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" required="true" class="form-control" id="exampleInputPhone1" placeholder="Телефон *">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" required="true" class="form-control" id="exampleInputEmail1" placeholder="Email *">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" required="true" class="form-control" id="exampleInputTown1" placeholder="Город *">
+                      </div>
+
                     </div>
                     <div class="col-md-6">
-                      <textarea id="question" name="question"></textarea>
-                      <label for="question">НАПИШИТЕ ВАШ ВОПРОС ЗДЕСЬ:</label>
+                      <div class="form-group">
+                        <textarea placeholder="Ваш вопрос" required="true" class="form-control" rows="5" id="question" name="question"></textarea>
+                      </div>
+
+                      <label class="text-center"for="question">НАПИШИТЕ ВАШ ВОПРОС ЗДЕСЬ:</label>
                     </div>
                   </div>
-
-              </div>
-            </div>
                   <div class="text-center">
                     <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#learnMore">Отправить вопрос нашим специалистам</a>
                   </div>
-                </form>
+
+                </div>
+              </div>
+
+            </form>
           </div>
           <div class="col-md-4">
 
@@ -845,18 +858,18 @@
                <!-- VK Widget -->
                <div id="vk_groups"></div>
                <script type="text/javascript" src="//vk.com/js/api/openapi.js?116">
-               <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 0, width: "222", height: "150", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 62401732);
-              </script>
+                 <script type="text/javascript">
+                  VK.Widgets.Group("vk_groups", {mode: 0, width: "222", height: "150", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 62401732);
+                </script>
 
 
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
   
@@ -865,7 +878,7 @@
   <nav class="navbar navbar-inverse navbar-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <ul>
             <li><a href="#agreement">Соглашение об обработке персональных данных</a></li>
             <li><a href="#politics">Политика конфиденциальности</a></li>
@@ -875,7 +888,7 @@
           </ul>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <script type="text/javascript">(function() {
   if (window.pluso)if (typeof window.pluso.start == "function") return;
   if (window.ifpluso==undefined) { window.ifpluso = 1;
@@ -888,12 +901,12 @@
 <div class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=01" data-services="vkontakte,facebook,odnoklassniki,linkedin,twitter,google"></div>
         </div>
         <div class="col-md-2">
-          <h3>+ 7 (499) 704 42 95</h3>
+          <h4>+ 7 (499) 704 42 95</h4>
 
-          <div>
-            <img src="img/logo-new.png" alt="Биржа лидов" width="200">
+          <a class="btn btn-warning btn-block" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a>
+          <div class="thumbnail">
+            <img src="img/logo-new.png" alt="Биржа лидов">
           </div>
-          <a class="btn btn-warning btn-sm btn-block" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a>
         </div>
       </div>
       <div class="text-center">
@@ -906,6 +919,7 @@
   
     <script src="js/script.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
   
 </body>

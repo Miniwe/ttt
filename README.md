@@ -1,5 +1,5 @@
 # ttt project
-> Handlebars + Less
+> Handlebars + Less + bootstrap
 
 ## Getting Started
 This plugin requires Grunt `>=0.4.0` and Bower `>=1.5.3`
@@ -12,8 +12,8 @@ bower install
 ```shell
 grunt
 ```
-or
+to compile or
 ```shell
 grunt watch
 ```
-to process mode
+ to continius development process

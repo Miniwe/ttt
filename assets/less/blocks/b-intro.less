@@ -2,17 +2,28 @@
   .box-shadow(@shadow-down);
   position: relative;
   &.container-fluid {
-    background: url('/img/headfonsize.jpg') no-repeat center 0;
+    background: url('../img/headfonsize.jpg') no-repeat center -80px;
   }
   .panel-ttt {
     background: transparent;
+    .panel-body {
+      padding: 0 ;
+    }
+  }
+  .btn-cont {
+    margin-top: @font-size-h2;
+    margin-bottom: 36px;
+    .btn {
+      font-family: @font-family-sans-serif-alt;
+      text-transform: uppercase;
+    }
   }
   .b-img-menu {
-    display: table;
+    display: flex;
+    justify-content: space-around;
     .item {
-      display: table-cell;
-      width: 12%;
       padding: 0 10px;
+      padding-top: 160px;
       vertical-align: bottom;
       .opacity(.4);
       .transition(opacity .4s ease);
@@ -35,23 +46,16 @@
         width: 28%;
         .opacity(0);
         text-align: center;
+        padding-top: 0;
         img {
           position: relative;
-          top: 38px;
-          left: 3px;
+          top: 16px;
+          left: -36px;
         }
         &:hover {
           .opacity(1);
         }
       }
-    }
-  }
-  .btn-cont {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    .btn {
-      font-family: @font-family-sans-serif-alt;
-      text-transform: uppercase;
     }
   }
 }

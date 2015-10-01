@@ -68,6 +68,30 @@ grunt.initConfig({
           }
         ]
       },
+      wow: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/wow/dist",
+            src: [
+              "wow.min.js"
+            ],
+            "dest": "public/js/"
+          }
+        ]
+      },
+      wowCSS: {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/wow/css/libs",
+            src: [
+              "animate.css"
+            ],
+            "dest": "public/css/"
+          }
+        ]
+      },
       bootstrapJS: {
         files: [
           {
