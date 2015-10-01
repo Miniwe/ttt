@@ -6834,6 +6834,11 @@ button.close {
     display: none !important;
   }
 }
+.btn {
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
 .navbar-footer {
   margin: 0;
 }
@@ -6894,7 +6899,7 @@ button.close {
 }
 .navbar .btn {
   padding: 4px 17px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin: 7px;
@@ -6970,7 +6975,7 @@ button.close {
   text-decoration: none;
 }
 .b-intro .b-img-menu .item .caption {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   margin-top: 13px;
   text-transform: uppercase;
@@ -7000,7 +7005,7 @@ button.close {
   margin-bottom: 30px;
 }
 .b-intro .btn-cont .btn {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 .b-gain.container-fluid {
