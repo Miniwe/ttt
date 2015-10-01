@@ -6,9 +6,122 @@
         <h1>НАШИ ПРЕДЛОЖЕНИЯ</h1>
       </div>
       <div class="panel-body">
-        Offsers content
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius laboriosam nisi fuga in aliquam facere ea, quibusdam ullam nostrum assumenda aliquid incidunt quaerat ab, suscipit, inventore possimus veniam eaque doloremque nesciunt quae. Similique provident voluptas natus ipsam, molestiae voluptatum eligendi temporibus incidunt, iusto voluptate dicta dolores laudantium! Ipsum, harum reprehenderit neque, iusto hic illo quae, voluptas cum dolorem, quod eligendi. Quia quae iusto quidem consequuntur magni sit error quisquam cumque nihil repudiandae! Explicabo repellat veritatis at optio, architecto animi aspernatur expedita quisquam id voluptas ratione quas commodi dolore sunt unde, praesentium soluta ab, consequatur officiis blanditiis repellendus fugiat modi.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptates!</div>
-        <div>Labore at consectetur rem inventore, dolorum architecto, rerum cupiditate quod enim est? Earum, quas necessitatibus accusantium aperiam, ipsam expedita ad incidunt harum deserunt culpa! Aut enim, repellendus soluta minima nisi deserunt, error ullam iusto, saepe assumenda totam reprehenderit. Architecto maxime molestiae ex eum laboriosam repellat cumque repellendus amet deserunt quod iusto natus neque a modi minima ut consequatur magnam ea maiores ducimus incidunt vero nostrum, praesentium. Odio officia, laudantium voluptate ab ad, nobis nostrum reprehenderit fuga iure quam saepe repellat eius ut iusto temporibus aliquam possimus, nam minima accusantium officiis necessitatibus? Unde quia nisi maiores aperiam beatae? Nihil, esse voluptate.<br><br>Dignissimos temporibus dolorem quisquam minima accusamus provident quis quo nulla?</div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-offer">
+              <div class="panel-body">
+                <div class="well well-offer">
+                  <form>
+                    <input type="text" class="input-lg" placeholder="Поиск"/>
+                    <input type="submit" class="btn btn-primary" value="Найти">
+                  </form>
+                </div>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="well well-offer panel panel-offset">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ► Категории офферов
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Cumque omnis facere sequi.</li>
+                            <li>Magnam fugit amet explicabo!</li>
+                            <li>Vero voluptas consequuntur sit!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="well well-offer panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ► Тип Трафика
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Corporis, est recusandae deserunt.</li>
+                            <li>Porro, laudantium repellat aperiam.</li>
+                            <li>Impedit, consectetur commodi atque.</li>
+                            <li>Inventore quod minus nemo!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="well well-offer panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ► Геотаргетинг
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Atque numquam nostrum, placeat!</li>
+                            <li>Eos tenetur, doloremque minima?</li>
+                            <li>Veritatis, molestias odio aliquam!</li>
+                            <li>Quaerat cum, beatae dolorem.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <div class="well well-offer well-offer">
+                  <form>
+                    <h5>
+                      <label>ДОБАВИТЬ СВОЙ ОФФЕР</label>
+                    </h5>
+                    <input type="submit" class="btn btn-danger" value="Добавить">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            {{> offer}}
+            {{!-- {{> offer}} --}}
+            {{> landing}}
+            {{!-- {{> offer}} --}}
+            {{> banners}}
+
+            <div class="text-center">
+                <nav>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>

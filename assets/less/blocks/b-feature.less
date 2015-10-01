@@ -5,15 +5,22 @@
   min-height: 100px;
   margin-bottom: 60px;
   background-color: #fff;
-  .scale(.9);
+  // .scale(.9);
+  &:hover {
+    .icon {
+      .scale(1.2);
+      border-radius: 10px;
+    }
+  }
   .icon {
     .box-shadow(0 0 5px #666);
     width: 100px;
     height: 100px;
     position: absolute;
     background-color: red;
-    border-radius: 10px;
-    .scale(1.2);
+    border-radius: 6px;
+    .scale(1.1);
+    .transition(all .4s ease);
     line-height: 100px;
     text-align: center;
     font-size: 40px;

@@ -56,24 +56,20 @@
     <div id="navbar-lower" class="collapse navbar-collapse">
     <div class="nav navbar-nav navbar-left">
       <script type="text/javascript">(function() {
-        if (window.pluso)if (typeof window.pluso.start == "function") return;
-        if (window.ifpluso==undefined) { window.ifpluso = 1;
-          var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-          s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-          s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-          var h=d[g]('body')[0];
-          h.appendChild(s);
-        }})();</script>
-      <div class="pluso" data-background="#ebebeb" data-options="medium,square,line,horizontal,counter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
-
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
     </div>
-
       <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">+ 7 (499) 704 42 95</a></li>
         <li><a class="btn btn-danger" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a></li>
       </ul>
-
-
     </div>
   </div>
 </nav>
@@ -156,6 +152,32 @@
 
           <button type="button" class="btn btn-block btn-lg btn-primary">Войти</button>
         </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="buyOffer" tabindex="-1" role="dialog" aria-labelledby="buyOfferLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="buyOfferLabel">Купить оффер</h4>
+      </div>
+      <div class="modal-body">
+      <form>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="Имя *">
+        </div>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="exampleInputPthone1" placeholder="Телефон *">
+        </div>
+
+        <button type="button" class="btn btn-block btn-danger">Купить</button>
+      </form>
 
       </div>
     </div>
@@ -316,21 +338,393 @@
         <h1>НАШИ ПРЕДЛОЖЕНИЯ</h1>
       </div>
       <div class="panel-body">
-        Offsers content
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius laboriosam nisi fuga in aliquam facere ea, quibusdam ullam nostrum assumenda aliquid incidunt quaerat ab, suscipit, inventore possimus veniam eaque doloremque nesciunt quae. Similique provident voluptas natus ipsam, molestiae voluptatum eligendi temporibus incidunt, iusto voluptate dicta dolores laudantium! Ipsum, harum reprehenderit neque, iusto hic illo quae, voluptas cum dolorem, quod eligendi. Quia quae iusto quidem consequuntur magni sit error quisquam cumque nihil repudiandae! Explicabo repellat veritatis at optio, architecto animi aspernatur expedita quisquam id voluptas ratione quas commodi dolore sunt unde, praesentium soluta ab, consequatur officiis blanditiis repellendus fugiat modi.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, voluptates!</div>
-        <div>Labore at consectetur rem inventore, dolorum architecto, rerum cupiditate quod enim est? Earum, quas necessitatibus accusantium aperiam, ipsam expedita ad incidunt harum deserunt culpa! Aut enim, repellendus soluta minima nisi deserunt, error ullam iusto, saepe assumenda totam reprehenderit. Architecto maxime molestiae ex eum laboriosam repellat cumque repellendus amet deserunt quod iusto natus neque a modi minima ut consequatur magnam ea maiores ducimus incidunt vero nostrum, praesentium. Odio officia, laudantium voluptate ab ad, nobis nostrum reprehenderit fuga iure quam saepe repellat eius ut iusto temporibus aliquam possimus, nam minima accusantium officiis necessitatibus? Unde quia nisi maiores aperiam beatae? Nihil, esse voluptate.<br><br>Dignissimos temporibus dolorem quisquam minima accusamus provident quis quo nulla?</div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-offer">
+              <div class="panel-body">
+                <div class="well well-offer">
+                  <form>
+                    <input type="text" class="input-lg" placeholder="Поиск"/>
+                    <input type="submit" class="btn btn-primary" value="Найти">
+                  </form>
+                </div>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="well well-offer panel panel-offset">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ► Категории офферов
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Cumque omnis facere sequi.</li>
+                            <li>Magnam fugit amet explicabo!</li>
+                            <li>Vero voluptas consequuntur sit!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="well well-offer panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ► Тип Трафика
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Corporis, est recusandae deserunt.</li>
+                            <li>Porro, laudantium repellat aperiam.</li>
+                            <li>Impedit, consectetur commodi atque.</li>
+                            <li>Inventore quod minus nemo!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="well well-offer panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ► Геотаргетинг
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <ul>
+                            <li>Atque numquam nostrum, placeat!</li>
+                            <li>Eos tenetur, doloremque minima?</li>
+                            <li>Veritatis, molestias odio aliquam!</li>
+                            <li>Quaerat cum, beatae dolorem.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <div class="well well-offer well-offer">
+                  <form>
+                    <h5>
+                      <label>ДОБАВИТЬ СВОЙ ОФФЕР</label>
+                    </h5>
+                    <input type="submit" class="btn btn-danger" value="Добавить">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="well well-offer">
+  <div class="row">
+    <div class="col-md-4">
+
+      <div class="thumbnail">
+        <img src="http://lorempixel.com/200/200" />
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>Компьютерный эксперт</h3>
+          <strong>Прочие офферы:</strong> Обучение, компьютерное обучение
+        </div>
+        <div class="col-md-4">
+          <strong>Запущен:</strong>
+          <br>
+          23 марта 2015
+        </div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>холд<span class="badge" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">?</span>
+            </th>
+            <th>тариф</th>
+            <th>%подтв.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Оплата заказа</th>
+            <td>14 дней</td>
+            <td>400 р.</td>
+            <td>n/a</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-7">
+          <strong>Гео:</strong> Россия, Украина, Казахстан
+        </div>
+        <div class="col-md-5">
+          <strong>Рейтинг:</strong> <span class="accent">✔✔✔✔</span>✔
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation"><a class="btn-danger" href="#details" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
+        <li role="presentation"><a class="btn-success" href="#landing" aria-controls="landing" role="tab" data-toggle="pill">Лендинг</a></li>
+        <li role="presentation"><a class="btn-warning" href="#promo" aria-controls="promo" role="tab" data-toggle="pill">Промо</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 text-right">
+      <a class="btn btn-danger" href="#buy-offer" data-toggle="modal" data-target="#buyOffer">Купить</a>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane well well-offer" id="details">
+<strong>ДЛЯ ВЕБМАСТЕРОВ</strong>
+<br>
+
+<br>
+<strong>Описание оффера:</strong>
+<br>
+
+<br>
+Компьютерный эксперт - это полноценный курс по компьютерной грамотности. Он включает в себя
+<br> 4 DVD-диска:
+<br>
+
+<br>
+• Компьютер на 100%
+<br>
+• Интернет без границ
+<br>
+
+<br>
+<strong>Почему стоит заказать курс "Компьютерный эксперт"</strong>
+<br>
+• Курс состоит из двух полноценных курсов, которые раньше продавались по отдельности.
+<br>
+• Цена за полный курс гораздо ниже, чем при покупке курсов по отдельности.
+<br>
+• Автор курса - признанный эксперт компьютерной грамотности.
+<br>
+
+<br>
+<strong>Виды трафика:</strong>
+<br>
+• ✔ PopUp
+<br>
+• ✔ E-mail маркетинг
+<br>
+• ✔ SEO-трафик
+<br>
+• ✔ Трафик из социальных сетей
+<br>
+• ✔ Контекстная реклама
+<br>
+• ✔ Вебсайты
+<br>
+
+<br>
+<strong>Условия выплат:</strong>
+<br>
+Холд денег на 5 дней.
+
+    </div>
+    <div role="tabpanel" class="tab-pane well well-offer" id="landing">
+<strong>ДЛЯ РЕКЛАМОДАТЕЛЕЙ</strong><br >
+<br >
+<strong>Описание оффера:</strong><br >
+<br >
+Компьютерный эксперт - это полноценный курс по компьютерной грамотности. Он включает в себя<br > 4 DVD-диска<br >:
+<br >
+• Компьютер на 100%<br >
+• Интернет без границ<br >
+<br >
+<strong>Почему стоит заказать курс "Компьютерный эксперт"</strong><br >
+<br >
+• Курс состоит из двух полноценных курсов, которые раньше продавались по отдельности.<br >
+• Цена за полный курс гораздо ниже, чем при покупке курсов по отдельности.<br >
+• Автор курса - признанный эксперт компьютерной грамотности.<br >
+<br >
+<strong>Виды трафика:</strong><br >
+<br >
+• ✔ PopUp<br >
+• ✔ E-mail маркетинг<br >
+• ✔ SEO-трафик<br >
+• ✔ Трафик из социальных сетей<br >
+• ✔ Контекстная реклама<br >
+• ✔ Вебсайты<br >
+<br >
+<strong>Условия оплаты:</strong><br >
+<br >
+Холд денег на 14 дней.<br >
+
+    </div>
+    <div role="tabpanel" class="tab-pane well well-offer" id="promo">.promo.promo.</div>
+  </div>
+
+</div>
+            
+            <div class="well well-offer">
+    <h3>Лендинги</h3>
+
+    Мы предоставляем на выбор до трех лендингов, созданных профессиональной командой дизайнеров, копирайтеров и веб-разработчиков.
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+        </div>
+
+      </div>
+    </div>
+
+    У вас есть возможность выбрать сразу три лендинга и провести А/В-тестирование.
+
+</div>
+
+            
+            <div class="well well-offer">
+    <h3>Баннеры</h3>
+
+Выбирайте подходящий под Ваш сайт баннер. <br>
+Возможны варианты с горизонтальным и вертикальным размещением.
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="http://lorempixel.com/400/200" />
+        </div>
+
+      </div>
+    </div>
+
+    <h3>Лид-формы</h3>
+    <div class="well">
+
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/lid-forma.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="well well-offer">
+          <form>
+              <textarea>
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+
+  &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+  &lt;head&gt;
+
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+              </textarea>
+              <button type="submit" class="btn btn-danger btn-lg">Получить код</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+            <div class="text-center">
+                <nav>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-    <div id="specials" class="panel panel-ttt" style="background-color: #F5F9FD">
-  <div class="panel-heading">
-    <h1>СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h1>
-  </div>
-  <div class="panel-body">
-    Specials content
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, accusamus deleniti animi atque pariatur voluptas! Distinctio recusandae maxime alias voluptate? Velit eum eaque harum iusto quasi, at, sint magni quia illo ab minima exercitationem, totam, similique hic esse itaque amet eius error atque culpa. Eius culpa illo quisquam at dolore quia recusandae ex corrupti reiciendis minima, eum nisi illum est similique numquam, tenetur quod! Veniam laudantium et doloribus minus aliquam dolor rerum a unde quo, possimus fugit quod cumque temporibus tempore repudiandae maiores voluptatibus. Laboriosam vitae debitis totam neque dolore nam a ipsam sint fuga dignissimos, dolorem adipisci laudantium quae.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ipsam.</div>
-    <div>Aperiam in tempore amet minus, dicta molestiae quod officia repellat distinctio cupiditate quis, est cumque atque iste quibusdam omnis impedit officiis, id ab rerum molestias deleniti asperiores nulla. Veritatis sint distinctio, repellendus saepe ipsam! Dolor nostrum quod adipisci ex reiciendis architecto, at et, consectetur, rerum aliquam ipsum inventore earum aut corporis, error quam doloribus rem placeat. Quae laudantium ipsa eaque laboriosam, non quibusdam placeat nam possimus earum quia aliquid recusandae harum excepturi incidunt sint dolorem facilis beatae, sit provident, atque similique officia a distinctio. Nesciunt fuga adipisci eos! Necessitatibus consequuntur quis vel velit, quasi commodi et obcaecati quod nisi at.<br><br>Error, voluptate, commodi a iure id amet? Nihil, temporibus itaque?</div>
+    <div id="specials" class="container-fluid b-specials" style="background-color: #F5F9FD">
+  <div class="container">
+
+    <div  class="panel panel-ttt" style="background-color: #F5F9FD">
+      <div class="panel-heading">
+        <h1>Специальные предложения</h1>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+          <h2>Для покупателей лидов</h2>
+            <ul>
+              <li>Внимательный отбор продавцов</li>
+              <li>Независимый арбитраж лидов</li>
+              <li><span class="accent">"Hold"</span> выплат продавцу на 5 дней</li>
+              <li>Полная прозрачность расчетов</li>
+            </ul>
+
+          </div>
+          <div class="col-md-6">
+            <h2>Для продавцов лидов</h2>
+            <ul>
+              <li>Огромная база заявок на покупку лидов</li>
+              <li>Прозрачные и <span class="accent">удобные схемы</span> работы</li>
+              <li>Полное техническое сопровождение</li>
+              <li>Индивидуальный подход на всех эиапах работы</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#learnMore">Узнать подробнее</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
     <div id="bigflow" class="container-fluid b-gain">
@@ -400,60 +794,113 @@
     </div>
   </div>
 </div>
-    <div id="feedback" class="panel panel-ttt">
-  <div class="panel-heading">
-    <div class="row">
-      <div class="col-md-10">
-        <h1>ОБРАТНАЯ СВЯЗЬ И КОНТАКТЫ</h1>
-        <h3>ПИШИТЕ НАМ ПО ЛЮБОМУ ВОПРОСУ, <span class="accent">МЫ ОТВЕТИМ</span> МАКСИМАЛЬНО БЫСТРО!</h3>
+    <div id="feedback" class="container-fluid b-specials">
+  <div class="container">
 
+    <div class="panel panel-ttt">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>ОБРАТНАЯ СВЯЗЬ И КОНТАКТЫ</h1>
+            <h3>ПИШИТЕ НАМ ПО ЛЮБОМУ ВОПРОСУ, <span class="accent">МЫ ОТВЕТИМ</span> МАКСИМАЛЬНО БЫСТРО!</h3>
+          </div>
+          <div class="col-md-4">
+            Подпишись на нас:
+          </div>
+        </div>
       </div>
-      <div class="col-md-2"></div>
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-md-8">
+                <form>
+            <div class="panel panel-offer panel-offer_dark">
+              <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" />
+                      <input type="text" />
+                      <input type="text" />
+                      <input type="text" />
+                    </div>
+                    <div class="col-md-6">
+                      <textarea id="question" name="question"></textarea>
+                      <label for="question">НАПИШИТЕ ВАШ ВОПРОС ЗДЕСЬ:</label>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+                  <div class="text-center">
+                    <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#learnMore">Отправить вопрос нашим специалистам</a>
+                  </div>
+                </form>
+          </div>
+          <div class="col-md-4">
+
+            <div class="panel panel-offer">
+              <div class="panel-body">
+               <h3>НАС УЖЕ МНОГО!</h3>
+
+               <!-- VK Widget -->
+               <div id="vk_groups"></div>
+               <script type="text/javascript" src="//vk.com/js/api/openapi.js?116">
+               <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {mode: 0, width: "222", height: "150", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 62401732);
+              </script>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="panel-body">
-    Feedback content
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet laborum eaque, mollitia quo autem, quis aspernatur. Expedita ab similique dignissimos architecto, blanditiis id quo adipisci amet, quos illo, obcaecati voluptatum magnam deserunt non tenetur commodi. Est ex aliquid totam maiores laborum nobis eligendi maxime cumque a, vero dolore dolores dolor, nam vitae, impedit beatae aspernatur cupiditate perferendis mollitia omnis provident reprehenderit! Mollitia nam neque, omnis illum nulla vitae iusto optio sequi eum molestias nobis similique earum quae quasi nihil, obcaecati consequatur asperiores amet deserunt rerum eveniet sapiente alias iste. Minima adipisci vitae eos voluptatem assumenda repudiandae veritatis dolor aut odit, doloribus, eaque placeat aspernatur! Ullam necessitatibus blanditiis ut explicabo! Voluptates temporibus eveniet quam tempore odio laborum, eaque, minima eos ullam nostrum, officia, deleniti nemo harum cupiditate eligendi culpa esse! Consectetur possimus, hic veniam at, in accusantium architecto quibusdam temporibus cupiditate pariatur similique iusto distinctio, ipsa ex. Ducimus unde, et corrupti, ratione, eum nisi quis beatae aliquid veniam ab facere iste rerum incidunt! Totam sint nisi voluptatibus ratione modi minus impedit maxime, tempora, harum incidunt placeat. Nihil eos ipsam ipsum officia perferendis. Quod soluta fugit vitae reprehenderit dolores animi, voluptas, sequi repellendus non reiciendis optio et, autem, fugiat dolorem repellat delectus.</div><br><br>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsam sapiente repellendus ex, architecto odio quia dicta natus blanditiis earum, nisi perferendis numquam, illum facilis a asperiores veniam delectus veritatis nulla doloremque hic nihil dolores harum quos praesentium? Voluptatibus vero provident eum recusandae placeat voluptates nesciunt, consequuntur accusantium incidunt, aliquam nobis nam ad, ex soluta fuga perspiciatis quisquam sequi porro hic eveniet, ullam velit optio? Ab eligendi cumque possimus eum neque consequuntur error excepturi est veritatis, sequi iste, consectetur quisquam eaque maiores magni ratione. Assumenda dolorum unde animi quo veniam facere sint, laborum. Molestias eum dolorem a tempore et, debitis.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, magni.</div>
-    <div>Voluptatum, non obcaecati porro minus minima repudiandae quam doloremque delectus alias, doloribus corporis voluptate! Ut illum corporis eos reprehenderit non. Perspiciatis molestias excepturi, assumenda nemo facilis corrupti dolorem repudiandae minus magni cupiditate! Veritatis voluptas repellat error officia impedit aliquam totam at, consectetur architecto minima nihil commodi saepe placeat minus quisquam, exercitationem quaerat sapiente, nostrum perspiciatis aut deleniti similique! Animi, quidem laboriosam perferendis suscipit eos molestias, rem amet maiores sapiente illo! Dolorem unde incidunt, fuga labore! Voluptates, laborum, placeat mollitia expedita animi assumenda minus, adipisci veniam atque ipsum harum vel eveniet nesciunt! Consequuntur, eius? Placeat cum labore similique magnam, architecto quidem.<br><br>Laborum voluptatum ipsa incidunt reiciendis a facilis tempore assumenda cupiditate?</div>
-  </div>
+</div>
 </div>
 
   
 
   <footer id="footer">
-<nav class="navbar navbar-inverse navbar-footer">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Биржа лидов</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+  <nav class="navbar navbar-inverse navbar-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#agreement">Соглашение об обработке персональных данных</a></li>
+            <li><a href="#politics">Политика конфиденциальности</a></li>
+            <li><a href="#rules">Правила работы</a></li>
+            <li><a href="#dogvor">Договор</a></li>
+            <li><a href="#revizits">Реквизиты</a></li>
           </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
+
+        </div>
+        <div class="col-md-6">
+          <script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=01" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+        </div>
+        <div class="col-md-2">
+          <h3>+ 7 (499) 704 42 95</h3>
+
+          <div>
+            <img src="img/logo-new.png" alt="Биржа лидов" width="200">
+          </div>
+          <a class="btn btn-warning btn-sm btn-block" href="#call-order" data-toggle="modal" data-target="#callOrder">Заказать звонок</a>
+        </div>
+      </div>
+      <div class="text-center">
+        © 2015 Биржа Лидов
+      </div>
+    </div>
+  </nav>
 </footer>
 
   
