@@ -7234,6 +7234,67 @@ select {
 .b-specials .panel-ttt {
   background-color: #f5f9fd;
 }
+.b-specials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.b-specials ul {
+  list-style-type: none;
+  margin: 0px auto;
+  width: 320px;
+}
+.b-specials ul li {
+  list-style-image: url(../img/bullet_red.png);
+  font-size: 22px;
+  position: relative;
+}
+.b-specials ul li > span {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+}
+.b-specials ul.right .e-arrow {
+  left: -170px;
+  right: auto;
+}
+.b-specials .e-arrow {
+  background: #fff;
+  width: 100px;
+  height: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px -1px;
+  -moz-box-shadow: 0 0 10px -1px;
+  box-shadow: 0 0 10px -1px;
+  position: absolute;
+  top: 10px;
+  right: -130px;
+}
+.b-specials .e-arrow:after,
+.b-specials .e-arrow:before {
+  content: " ";
+  display: block;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  background: inherit;
+  position: absolute;
+  top: -3px;
+}
+.b-specials .e-arrow:before {
+  left: -2px;
+  -webkit-box-shadow: -2px 0 3px -2px;
+  -moz-box-shadow: -2px 0 3px -2px;
+  box-shadow: -2px 0 3px -2px;
+}
+.b-specials .e-arrow:after {
+  right: -2px;
+  -webkit-box-shadow: 2px 0 3px -2px;
+  -moz-box-shadow: 2px 0 3px -2px;
+  box-shadow: 2px 0 3px -2px;
+}
+.b-specials .btn.btn-lg.btn-danger {
+  margin-top: 30px;
+}
 .b-feature {
   -webkit-box-shadow: 0 0 10px 0px #000000;
   -moz-box-shadow: 0 0 10px 0px #000000;
