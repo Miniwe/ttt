@@ -9,7 +9,7 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-8">
-          <h4>Компьютерный эксперт</h4>
+          <h4>Компьютерный эксперт: {{uid}}</h4>
           <strong>Прочие офферы:</strong> Обучение, компьютерное обучение
         </div>
         <div class="col-md-4">
@@ -53,7 +53,7 @@
   <div class="row">
     <div class="col-md-8">
       <ul class="offer-tabs" role="tablist">
-        <li role="presentation"><a class="btn btn-danger" href="#details" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
+        <li role="presentation"><a class="btn btn-danger" href="#details{{uid}}" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
         <li role="presentation"><a class="btn btn-success" href="#landing" aria-controls="landing" role="tab" data-toggle="pill">Лендинг</a></li>
         <li role="presentation"><a class="btn btn-warning" href="#promo" aria-controls="promo" role="tab" data-toggle="pill">Промо</a></li>
       </ul>
@@ -66,7 +66,7 @@
 
 <div class="">
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane well well-offer" id="details">
+    <div role="tabpanel" class="tab-pane well well-offer" id="details{{uid}}">
 <strong>ДЛЯ ВЕБМАСТЕРОВ</strong>
 <br>
 
@@ -117,37 +117,9 @@
 Холд денег на 5 дней.
 
     </div>
-    <div role="tabpanel" class="tab-pane well well-offer" id="landing">
-<strong>ДЛЯ РЕКЛАМОДАТЕЛЕЙ</strong><br >
-<br >
-<strong>Описание оффера:</strong><br >
-<br >
-Компьютерный эксперт - это полноценный курс по компьютерной грамотности. Он включает в себя<br > 4 DVD-диска<br >:
-<br >
-• Компьютер на 100%<br >
-• Интернет без границ<br >
-<br >
-<strong>Почему стоит заказать курс "Компьютерный эксперт"</strong><br >
-<br >
-• Курс состоит из двух полноценных курсов, которые раньше продавались по отдельности.<br >
-• Цена за полный курс гораздо ниже, чем при покупке курсов по отдельности.<br >
-• Автор курса - признанный эксперт компьютерной грамотности.<br >
-<br >
-<strong>Виды трафика:</strong><br >
-<br >
-• ✔ PopUp<br >
-• ✔ E-mail маркетинг<br >
-• ✔ SEO-трафик<br >
-• ✔ Трафик из социальных сетей<br >
-• ✔ Контекстная реклама<br >
-• ✔ Вебсайты<br >
-<br >
-<strong>Условия оплаты:</strong><br >
-<br >
-Холд денег на 14 дней.<br >
+{{> landing}}
+{{> banners}}
 
-    </div>
-    <div role="tabpanel" class="tab-pane well well-offer" id="promo">.promo.promo.</div>
   </div>
 
 </div>
