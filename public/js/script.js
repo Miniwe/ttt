@@ -10358,6 +10358,12 @@ return jQuery;
   $(function() {
     $('.badge').tooltip();
 
+    $('.scroll-to').on('click', function(event){
+        event.preventDefault();
+        var target = $(event.currentTarget).attr("href");
+        $("body").animate({scrollTop: $(target).offset().top - $(".navbar-fixed-top").height()});
+    });
+
     $('[role=tab]').on('click', function(event){
       var parent = $(event.currentTarget).parent();
       if (parent.hasClass('active')) {
