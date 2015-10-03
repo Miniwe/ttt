@@ -89,7 +89,12 @@
           </div>
           <div class="col-md-8">
             {{!-- {{#embed "offer" uid="aaa"}} {{/embed}} --}}
-            {{> offer}}
+            {{#offers}}
+              {{> offer .}}
+            {{/offers}}
+
+
+            {{!-- {{> offer}} --}}
             {{!-- {{> offer}} --}}
             {{!-- {{> offer}} --}}
             {{!-- {{> offer}} --}}

@@ -120,14 +120,10 @@ grunt.initConfig({
                 ],
                 basePath: 'views/',
                 context: {
-                    title: 'Биржа лидов',
-                    phone: '+ 7 (499) 704 42 95',
-                    items: [
-                    'apple',
-                    'orange',
-                    'banana'
-                    ]
-                }
+                        title: 'Биржа лидов',
+                        phone: '+ 7 (499) 704 42 95',
+                        offers: grunt.file.readJSON('views/data/offers.json')
+                    }
             }
         }
     },

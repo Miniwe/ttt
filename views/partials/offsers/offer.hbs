@@ -9,13 +9,13 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-8">
-          <h4>Компьютерный эксперт: {{uid}}</h4>
-          <strong>Прочие офферы:</strong> Обучение, компьютерное обучение
+          <h4>{{name}}</h4>
+          <strong>Прочие офферы:</strong>{{moreOffer}}
         </div>
         <div class="col-md-4">
           <strong>Запущен:</strong>
           <br>
-          23 марта 2015
+          {{started}}
         </div>
       </div>
       <table class="table table-striped">
@@ -39,7 +39,7 @@
       </table>
       <div class="row">
         <div class="col-md-7">
-          <strong>Гео:</strong> Россия, Украина, Казахстан
+          <strong>Гео:</strong> {{geo}}
         </div>
         <div class="col-md-5 text-right">
           <strong>Рейтинг:</strong> <span class="accent">✔✔✔✔</span>✔
@@ -53,73 +53,71 @@
   <div class="row">
     <div class="col-md-8">
       <ul class="offer-tabs" role="tablist">
-        <li role="presentation"><a class="btn btn-danger" href="#details{{uid}}" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
-        <li role="presentation"><a class="btn btn-success" href="#landing" aria-controls="landing" role="tab" data-toggle="pill">Лендинг</a></li>
-        <li role="presentation"><a class="btn btn-warning" href="#promo" aria-controls="promo" role="tab" data-toggle="pill">Промо</a></li>
+        <li role="presentation"><a class="btn btn-danger" href="#details-{{id}}" aria-controls="details" role="tab" data-toggle="pill">Подробнее</a></li>
+        <li role="presentation"><a class="btn btn-success" href="#landing-{{id}}" aria-controls="landing" role="tab" data-toggle="pill">Лендинг</a></li>
+        <li role="presentation"><a class="btn btn-warning" href="#promo-{{id}}" aria-controls="promo" role="tab" data-toggle="pill">Промо</a></li>
       </ul>
     </div>
     <div class="col-md-4 text-right">
       <a class="btn btn-danger" href="#buy-offer" data-toggle="modal" data-target="#buyOffer">Купить</a>
     </div>
   </div>
-</div>
-
-<div class="">
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane well well-offer" id="details{{uid}}">
-<strong>ДЛЯ ВЕБМАСТЕРОВ</strong>
-<br>
+    <div role="tabpanel" class="tab-pane well" id="details-{{id}}">
+      <strong>ДЛЯ ВЕБМАСТЕРОВ</strong>
+      <br>
 
-<br>
-<strong>Описание оффера:</strong>
-<br>
+      <br>
+      <strong>Описание оффера:</strong>
+      <br>
 
-<br>
-Компьютерный эксперт - это полноценный курс по компьютерной грамотности. Он включает в себя
-<br> 4 DVD-диска:
-<br>
+      <br>
+      Компьютерный эксперт - это полноценный курс по компьютерной грамотности. Он включает в себя
+      <br> 4 DVD-диска:
+      <br>
 
-<br>
-• Компьютер на 100%
-<br>
-• Интернет без границ
-<br>
+      <br>
+      • Компьютер на 100%
+      <br>
+      • Интернет без границ
+      <br>
 
-<br>
-<strong>Почему стоит заказать курс "Компьютерный эксперт"</strong>
-<br>
-• Курс состоит из двух полноценных курсов, которые раньше продавались по отдельности.
-<br>
-• Цена за полный курс гораздо ниже, чем при покупке курсов по отдельности.
-<br>
-• Автор курса - признанный эксперт компьютерной грамотности.
-<br>
+      <br>
+      <strong>Почему стоит заказать курс "Компьютерный эксперт"</strong>
+      <br>
+      • Курс состоит из двух полноценных курсов, которые раньше продавались по отдельности.
+      <br>
+      • Цена за полный курс гораздо ниже, чем при покупке курсов по отдельности.
+      <br>
+      • Автор курса - признанный эксперт компьютерной грамотности.
+      <br>
 
-<br>
-<strong>Виды трафика:</strong>
-<br>
-• ✔ PopUp
-<br>
-• ✔ E-mail маркетинг
-<br>
-• ✔ SEO-трафик
-<br>
-• ✔ Трафик из социальных сетей
-<br>
-• ✔ Контекстная реклама
-<br>
-• ✔ Вебсайты
-<br>
+      <br>
+      <strong>Виды трафика:</strong>
+      <br>
+      • ✔ PopUp
+      <br>
+      • ✔ E-mail маркетинг
+      <br>
+      • ✔ SEO-трафик
+      <br>
+      • ✔ Трафик из социальных сетей
+      <br>
+      • ✔ Контекстная реклама
+      <br>
+      • ✔ Вебсайты
+      <br>
 
-<br>
-<strong>Условия выплат:</strong>
-<br>
-Холд денег на 5 дней.
+      <br>
+      <strong>Условия выплат:</strong>
+      <br>
+      Холд денег на 5 дней.
 
     </div>
-{{> landing}}
-{{> banners}}
+    {{> landing .}}
+    {{> banners .}}
 
   </div>
 
 </div>
+
